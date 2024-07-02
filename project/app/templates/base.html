@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+    </header>
+    {% block content %}
+    <h1>this is middle page   </h1>
+    {% endblock %}
+    <footer>
+        <h1>this is a footer page </h1>
+    </footer>
+</body>
+</html>
